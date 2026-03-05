@@ -1,91 +1,135 @@
-/* Reset básico */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
 }
 
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #ffffff;
-    color: #333;
+body{
+font-family:Arial, sans-serif;
+line-height:1.6;
+background-color:#ffffff;
+color:#333;
 }
 
-/* Cabecera y menú */
-.site-header {
-    background-color: #003366;
-    color: white;
-    padding: 15px 0;
+.site-header{
+background-color:#003366;
+color:white;
+padding:15px 0;
+position:relative;
 }
 
-.container {
-    width: 90%;
-    margin: auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.container{
+width:90%;
+margin:auto;
+display:flex;
+align-items:center;
+justify-content:space-between;
 }
 
-.logo {
-    font-size: 1.8rem;
-    font-weight: bold;
+.logo{
+font-size:1.8rem;
+font-weight:bold;
 }
 
-.navbar a {
-    color: rgb(255, 255, 255);
-    margin-left: 20px;
-    text-decoration: none;
-    font-weight: 500;
+.navbar a{
+color:white;
+margin-left:20px;
+text-decoration:none;
+font-weight:500;
 }
 
-.navbar a:hover {
-    text-decoration: underline;
+.navbar a:hover{
+text-decoration:underline;
 }
 
-/* TITULO */
-.hero {
-    background: url('banner-fim.jpg') no-repeat center center/cover;
-    padding: 120px 0;
-    text-align: center;
-    color: rgb(0, 0, 0);
+.menu-btn{
+cursor:pointer;
+display:flex;
+flex-direction:column;
+justify-content:space-between;
+height:20px;
 }
 
-.hero h2 {
-    font-size: 2.4rem;
-    margin-bottom: 10px;
-    color: rgb(0, 3, 81);
-    text-shadow: 3px 3px 8px rgba(4, 0, 77, 0.604);
+.menu-btn span{
+display:block;
+width:25px;
+height:3px;
+background:white;
+border-radius:2px;
 }
 
-/* Secciones */
-.info-section {
-    padding: 40px 0;
-    width: 90%;
-    margin: auto;
+.menu{
+position:absolute;
+top:70px;
+left:0;
+width:200px;
+background-color:#002244;
+display:none;
 }
 
-.info-section h2 {
-    font-size: 2rem;
-    margin-bottom: 15px;
-    color: #003366;
+.menu ul{
+list-style:none;
+}
+
+.menu li{
+border-bottom:1px solid rgba(255,255,255,0.2);
+}
+
+.menu a{
+display:block;
+padding:12px;
+color:white;
+text-decoration:none;
+}
+
+.menu a:hover{
+background:#003366;
+}
+
+.menu.active{
+display:block;
+}
+
+.hero{
+background:url('banner-fim.jpg') no-repeat center center/cover;
+padding:120px 0;
+text-align:center;
+color:black;
+}
+
+.hero h2{
+font-size:2.4rem;
+margin-bottom:10px;
+color:rgb(0,3,81);
+text-shadow:3px 3px 8px rgba(4,0,77,0.6);
+}
+
+.info-section{
+padding:40px 0;
+width:90%;
+margin:auto;
+}
+
+.info-section h2{
+font-size:2rem;
+margin-bottom:15px;
+color:#003366;
 }
 
 .info-section p,
-.info-section ul {
-    margin-top: 10px;
-    font-size: 1rem;
+.info-section ul{
+margin-top:10px;
+font-size:1rem;
 }
 
-.info-section ul li {
-    list-style: disc inside;
+.info-section ul li{
+list-style:disc inside;
 }
 
-/* Pie de página */
-.site-footer {
-    background-color: #003366;
-    color: white;
-    text-align: center;
-    padding: 15px 0;
-    margin-top: 40px;
+.site-footer{
+background-color:#003366;
+color:white;
+text-align:center;
+padding:15px 0;
+margin-top:40px;
 }

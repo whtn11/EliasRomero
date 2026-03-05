@@ -1,101 +1,130 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>FIM UAS</title>
-
-<style>
-    
-
-
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family: Arial, sans-serif;
-}
-
-
-
-.navbar{
-    background-color:#003366;
-    height:60px;
-    display:flex;
-    align-items:center;
-    padding:0 20px;
-    position:relative;
-}
-
-
-.logo{
-    color:white;
-    font-size:1.5rem;
-    font-weight:bold;
-    margin-left:15px;
-}
-
-/* Botón hamburguesa */
-.menu-btn{
-    cursor:pointer;
-    display:flex;
-    flex-direction:column;
-    justify-content:space-between;
-    height:20px;
-}
-
-.menu-btn span{
-    display:block;
-    width:25px;
-    height:3px;
-    background:white;
-    border-radius:2px;
-}
-
-
-.menu{
-    position:absolute;
-    top:60px;
-    left:0;
-    width:200px;
-    background-color:#002244;
-    display:none;
-    padding:20px;
-}
-
-
-.menu.active{
-    display:block;
-}
-
-</style>
+<title>Facultad de Ingenieria Mochis</title>
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<header class="navbar">
-    
-    <!-- Botón hamburguesa -->
-    <div class="menu-btn" onclick="toggleMenu()">
-        <span></span>
-        <span></span>
-        <span></span>
-    </div>
 
-    <div class="logo">FIM UAS</div>
+<header class="site-header">
+
+<div class="container">
+
+<div class="menu-btn" onclick="toggleMenu()">
+<span></span>
+<span></span>
+<span></span>
+</div>
+
+<h1 class="logo">FIM UAS</h1>
+
+<nav class="navbar">
+<a href="#">Inicio</a>
+<a href="#carreras">Carreras</a>
+<a href="#materias">Materias</a>
+<a href="#contacto">Contacto</a>
+</nav>
+
+</div>
+
+
+<div class="menu">
+
+<h3>Menú Principal</h3>
+
+<ul>
+
+<li>Dirección Escolar</li>
+<li>Servicios Académicos</li>
+<li>Programa de Tutorías</li>
+<li>Servicios Escolares</li>
+<li>Oferta Educativa</li>
+<li>Egresados</li>
+
+<li class="submenu-title">Logotipos para tus tareas</li>
+
+<li>
+<ul class="submenu">
+<li>Logo UAS</li>
+<li>Logo FIM</li>
+<li>Logo visión de futuro 2029</li>
+</ul>
+</li>
+
+<li>Convocatorias</li>
+<li>Bolsa de Trabajo</li>
+<li>Modelo Educativo</li>
+<li>Reglamentación</li>
+<li>Transparencia</li>
+<li>Certificación</li>
+
+</ul>
+
+</div>
 
 </header>
 
 
-<div class="menu">
-</div>
+<section class="hero">
+<h2>Facultad de Ingenieria Mochis</h2>
+<p></p>
+</section>
+
+
+<section id="carreras" class="info-section">
+
+<h2>Carreras</h2>
+
+<p>La facultad ofrece programas educativos enfocados en tecnologia y desarrollo de software.</p>
+
+<ul>
+<li>Ingenieria en Desarrollo de Software</li>
+<li>Ingenieria en Informatica</li>
+<li>Licenciatura en Sistemas de Informacion</li>
+</ul>
+
+</section>
+
+<!-- Seccion materias -->
+<section id="materias" class="info-section">
+
+<h2>Materias</h2>
+
+<ul>
+<li>Programacion</li>
+<li>Bases de datos</li>
+<li>Redes de computadoras</li>
+<li>Sistemas operativos</li>
+<li>Ingenieria de software</li>
+</ul>
+
+</section>
+
+<!-- Seccion contacto -->
+<section id="contacto" class="info-section">
+
+<h2>Contacto</h2>
+
+<p>Facultad de ingenieria Mochis</p>
+<p>Universidad Autonoma de Sinaloa</p>
+<p>Email: contacto@fim.uas.edu.mx</p>
+
+</section>
+
+<!-- Pie de pagina -->
+<footer class="site-footer">
+<p>2026 Facultad de ingenieria Mochis - Universidad Autonoma de Sinaloa</p>
+</footer>
 
 <script>
 function toggleMenu(){
-    document.querySelector(".menu").classList.toggle("active");
+document.querySelector(".menu").classList.toggle("active");
 }
 </script>
 
 </body>
- 
 </html>
